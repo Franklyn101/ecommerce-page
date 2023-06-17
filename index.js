@@ -90,29 +90,35 @@ add.addEventListener('click', ()=> {
 
 
 //   hamburger
-let hamburger = document.querySelector('.hamburger');
-let menu = document.querySelector('.menu');
-let isActive = false;
 
-function toggleMenu() {
-  isActive = !isActive; // Toggle the active state
 
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
 
-  if (isActive) {
-    document.addEventListener('click', closeMenu);
-  } else {
-    document.removeEventListener('click', closeMenu);
-  }
-}
 
-function closeMenu(event) {
-  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-    isActive = false;
-    hamburger.classList.remove('active');
-    menu.classList.remove('active');
-    document.removeEventListener('click', closeMenu);
-  }
-} 
+// let hamburger = document.querySelector('.hamburger');
+// let menu = document.querySelector('.menu');
+// let isActive = false;
+
+// function toggleMenu() {
+//   isActive = !isActive; // Toggle the active state
+
+//   hamburger.classList.toggle('active');
+//   menu.classList.toggle('active');
+
+//   if (isActive) {
+//     document.addEventListener('click', closeMenu);
+//   } else {
+//     document.removeEventListener('click', closeMenu);
+//   }
+// }
+
+// function closeMenu(event) {
+//   if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+//     isActive = false;
+//     hamburger.classList.remove('active');
+//     menu.classList.remove('active');
+//     document.removeEventListener('click', closeMenu);
+//   }
+// }
+
+    
   });

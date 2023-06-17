@@ -257,7 +257,7 @@ section {
 
     
     .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 5px);
+        transform: rotate(45deg) translate(4px, 9px);
       }
     
       .hamburger.active span:nth-child(2) {
@@ -265,21 +265,21 @@ section {
       }
     
       .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -5px);
+        transform: rotate(-45deg) translate(4px, -9px);
       }
     .menu {
         display: flex;
         position: absolute;
         top: 0;
-        left: 4%;
-        width: 34%;
+        left: 0;
+        width: 0;
          height: 0;
-         background-color: #000;
+         background-color: #fff;
          z-index: 999;
          transition: .10s; 
          margin-top: 60px;
          overflow: hidden;
-    }
+    } 
     .menu .active{
         display: flex;
         justify-content: center;
@@ -289,7 +289,8 @@ section {
     }
       .active {
         display: flex;
-        height: 50%;
+        height: 70%;
+        width: 100%;
         transition: 1s; 
       }
       .menu-items {
@@ -310,7 +311,7 @@ section {
           }
           .menu-items a {
             text-decoration: none;
-            color: #fff;
+            color: #000;
             font-size: 20px;
             font-weight: 400;
            
