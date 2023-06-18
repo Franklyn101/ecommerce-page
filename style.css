@@ -270,28 +270,29 @@ section {
     .menu {
         display: flex;
         position: absolute;
-        top: 0;
+        top: -90px;
         left: 0;
         width: 0;
-         height: 0;
+         height: 190%;
          background-color: #fff;
          z-index: 999;
          transition: .10s; 
-         margin-top: 60px;
          overflow: hidden;
     } 
     .menu .active{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: -100px;
        
         
     }
       .active {
         display: flex;
-        height: 70%;
+        /* height: 200%; */
         width: 100%;
         transition: 1s; 
+        
       }
       .menu-items {
         display: flex;
@@ -308,11 +309,210 @@ section {
             align-items: center;
             gap: 25px;
             width: 100%;
+            margin-left: 100px;
+            padding-top: -200px;
+           
           }
           .menu-items a {
             text-decoration: none;
             color: #000;
-            font-size: 20px;
+            font-size: 40px;
+            font-weight: 400;
+            
+           
+            
+          }
+    
+        
+
+
+    .nav-bar {
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 0px 0px;
+        padding: 0px 30px;
+        padding-top: 20px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .smaller-images {
+        display: none;
+    }
+
+    .cart-images {
+        width: 100%;
+    }
+
+    .big-image img {
+        width: 100%;
+        border-radius: 0px;
+        /* margin-right: 520px; */
+    }
+
+    .big-image {
+        width: 100%;
+    }
+    .arrow {
+        display: flex;
+        justify-content: space-between;
+        width: 663px;
+        position: absolute;
+        /* gap: 60%; */
+        padding: 0px 30px;
+        margin-top: -330px;
+        z-index: 100;
+    }
+
+    .arrow img {
+        width: 10%;
+        height: 14%;
+        background: #fff;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .button-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+
+    .cartbtn {
+        width: 36rem;
+        height: 90px;
+        border-radius: 10px;
+        font-size: 30px;
+        
+    }
+    .cart-info p {
+        font-size: 30px;
+    }
+    .addbtn {
+        width: 36rem;
+        height: 90px;
+        border-radius: 10px;
+       
+    }
+
+    .cart-info p {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .button-info img {
+        width: 4%;
+        
+
+    }
+    .cart-info h5 {
+        font-size: 24px;
+        font-weight: 700;
+
+    }
+   
+
+ 
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 505px) {
+
+    .parent {
+        width: 668px;
+    }
+    nav {
+        display: none;
+    }
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #000;
+        margin-bottom: 5px;
+        transition: transform 0.3s, background-color 0.3s;
+    }
+
+    
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 9px);
+      }
+    
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+    
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -9px);
+      }
+    .menu {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 170%;
+         background-color: #fff;
+         z-index: 999;
+         transition: .10s; 
+         margin-top: 60px;
+         overflow: hidden;
+    } 
+    .menu .active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        
+    }
+      .active {
+        display: flex;
+        /* height: 200%; */
+        width: 100%;
+        transition: 1s; 
+      }
+      .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 25px;
+        width: 100%;
+        
+      }
+         
+          .menu-items a {
+            text-decoration: none;
+            color: #000;
+            font-size: 29px;
             font-weight: 400;
            
             
