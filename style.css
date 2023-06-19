@@ -71,6 +71,68 @@ nav a {
     gap: 30px;
 }
 
+.nav-right button {
+    border: none;
+    background: transparent;
+}
+
+.don {
+    width: 20%;
+    height: 27%;
+    box-shadow: 1px 5px 5px 4px #dfdbdb;
+    background: #fff;
+    margin-top: 40px;
+    top: 70px;
+    display: none;
+    position: absolute;
+    left: 1020px;
+    z-index: 10;
+    padding: 20px;
+}
+
+.cart-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    padding-bottom: 20px;
+    
+}
+.cart-product .item {
+    width: 43px;
+    height: 43px;
+
+}
+.don h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.cart-product .delete {
+    width: 20px;
+    height: 19px;
+}
+
+.cart-product p {
+    font-size: 13px;
+    font-weight: 400;
+    width: 90px;
+    color: hsl(219, 9%, 45%);
+}
+.nav-right .checkout {
+    background:  hsl(26, 100%, 55%);
+    color: #fff;
+    padding-left: 90px;
+    padding-right: 90px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 6px;
+   font-weight: 700;
+   font-size: 12px;
+   /* margin-left: 10px; */
+  
+}
 .nav-right img {
     width: 35%;
     height: 35%;
@@ -289,9 +351,12 @@ section {
     }
       .active {
         display: flex;
+        /* position: fixed; */
         /* height: 200%; */
         width: 100%;
         transition: 1s; 
+        z-index: 999;
+        top: 0;
         
       }
       .menu-items {
@@ -322,7 +387,63 @@ section {
            
             
           }
+          .don {
+            width: 650px;
+            height: 80%;
+            box-shadow: 1px 5px 5px 4px #dfdbdb;
+            background: #fff;
+            margin-top: 190px;
+            top: 10px;
+            display: none;
+            position: absolute;
+            left: 10px;
+            z-index: 1000;
+          }
+
+          
+.cart-product {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    gap: 20px;
+    padding-bottom: 150px;
+    padding-top: 90px;
     
+}
+.cart-product p {
+    font-size: 30px;
+    width: 390px;
+}
+    
+.cart-product .item {
+    width: 84px;
+    height: 84px;
+
+}
+
+.cart-product .delete {
+    width: 40px;
+    height: 40px;
+}
+.nav-right .checkout {
+    background:  hsl(26, 100%, 55%);
+    color: #fff;
+    padding-left: 210px;
+    padding-right: 210px;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   border-radius: 6px;
+   font-weight: 700;
+   font-size: 29px;
+   margin-left: 30px;
+}
+
+.don h2 {
+    font-size: 30px;
+    margin-left: 29px;
+}
+  
         
 
 
