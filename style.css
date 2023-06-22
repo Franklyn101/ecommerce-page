@@ -286,8 +286,31 @@ section {
     width: 78%;
     height: 78%;
 }
-
-
+.together{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.margin{
+    margin-top: 50px;
+}
+.badge{
+    position: absolute;
+    right: 200px;
+    margin-top: -20px;
+    width: 13px;
+    height: 13px;
+    background: red;
+    font-size: 12px;
+    border-radius: 50%;
+    color: white;
+    display: none;
+    font-weight: bold;
+    place-items: center;
+}
 @media screen and (max-width: 375px) {
 
     .parent {
@@ -399,6 +422,33 @@ section {
             left: 10px;
             z-index: 1000;
           }
+
+          
+.together{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.margin{
+    margin-top: 50px;
+}
+.badge{
+    position: absolute;
+    left: 490px;
+    margin-top: -40px;
+    width: 27px;
+    height: 27px;
+    background: red;
+    font-size: 17px;
+    border-radius: 50%;
+    color: white;
+    display: none;
+    font-weight: bold;
+    place-items: center;
+}
 
           
 .cart-product {
@@ -666,6 +716,32 @@ section {
     .cart-images {
         width: 100%;
     }
+             
+.together{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.margin{
+    margin-top: 50px;
+}
+.badge{
+    position: absolute;
+    left: 490px;
+    margin-top: -40px;
+    width: 27px;
+    height: 27px;
+    background: red;
+    font-size: 17px;
+    border-radius: 50%;
+    color: white;
+    display: none;
+    font-weight: bold;
+    place-items: center;
+}
 
     .big-image img {
         width: 100%;
